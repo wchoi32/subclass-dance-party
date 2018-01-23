@@ -21,13 +21,20 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+/*  border:10px solid red;
+  border-radius:10px;*/
   position:absolute;
 }
 
-.pikachuDancer{
-  border:10px solid blue;
+.blinkyDancer{
+  border:10px solid red;
   border-radius:10px;
-  position:absolute;
+}
+.pikachuDancer {
+  height: 10%;
+  width: 10%;
+  
+}
+.breakDancer{
+  
 }
