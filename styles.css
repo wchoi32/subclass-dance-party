@@ -21,8 +21,6 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-/*  border:10px solid red;
-  border-radius:10px;*/
   position:absolute;
 }
 
@@ -31,10 +29,16 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
 }
 .pikachuDancer {
-  height: 10%;
-  width: 10%;
-  
+  transform: rotate(-90deg);
 }
 .breakDancer{
-  
+  transform: scaleX(-1);
+  filter: FlipH;
 }
+
+/*.animate{
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}*/
