@@ -37,3 +37,8 @@ makeDancer.prototype.lineUp = function(top, left) {
 // console.log(this);
   this.setPosition(500, this.left);
 };
+
+
+makeDancer.prototype.calcDist = function() {
+  
+};

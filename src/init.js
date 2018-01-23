@@ -37,5 +37,13 @@ $(document).ready(function() {
       i.lineUp();
     });
   });
+
+  $(this.dancer).on('click', function(event) {
+    console.log(this.$node);
+    window.dancers.forEach(function(i) {
+      i.calcDist();
+    });
+  });
+  
 });
 

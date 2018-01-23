@@ -30,6 +30,7 @@ body, a:link, a:visited, a:active{
 }
 .pikachuDancer {
   transform: rotate(-90deg);
+  
 }
 .breakDancer{
   transform: scaleX(-1);
@@ -40,3 +41,10 @@ body, a:link, a:visited, a:active{
   padding: 5px 12px;
 }
 
+.pikachuDancer:hover {
+  box-shadow: 0 10px 25px yellow;
+}
+
+.dancersInteract{
+
+}
