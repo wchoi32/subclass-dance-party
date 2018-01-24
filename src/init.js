@@ -52,6 +52,10 @@ $(document).ready(function() {
     
     window.dancers[lengthWindow].setPosition(window.dancers[distanceDancers.indexOf(max)].top, window.dancers[distanceDancers.indexOf(max)].left);
   });
+
+  $(document.body).on('click', '.dancer', function(event) {
+    console.log(event);
+  });
   
 });
 
