@@ -38,11 +38,19 @@ $(document).ready(function() {
     });
   });
 
-  $(this.dancer).on('click', function(event) {
-    console.log(this.$node);
+  $('.lastElement').on('click', function(event) {
+    var distanceDancers = [];
+    var lengthWindow = window.dancers.length - 1;
+    var lastElementTop = window.dancers[lengthWindow].top;
+    var lastElementLeft = window.dancers[lengthWindow].left;
     window.dancers.forEach(function(i) {
-      i.calcDist();
+      distanceDancers.push(Math.sqrt(Math.pow((lastElementTop - i.top), 2) + Math.pow((lastElementLeft - i.left), 2)));                
     });
+    var max = distanceDancers.reduce(function(a, b) {
+      return Math.max(a, b);
+    });
+    
+    window.dancers[lengthWindow].setPosition(window.dancers[distanceDancers.indexOf(max)].top, window.dancers[distanceDancers.indexOf(max)].left);
   });
   
 });

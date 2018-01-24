@@ -23,7 +23,7 @@ body, a:link, a:visited, a:active{
 .dancer{
   position:absolute;
 }
-
+                            
 .blinkyDancer{
   border:10px solid red;
   border-radius:10px;
@@ -45,6 +45,7 @@ body, a:link, a:visited, a:active{
   box-shadow: 0 10px 25px yellow;
 }
 
-.dancersInteract{
-
+.lastElement{
+  float:right;
+  padding: 5px 12px;
 }

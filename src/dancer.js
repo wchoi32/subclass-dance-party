@@ -39,6 +39,6 @@ makeDancer.prototype.lineUp = function(top, left) {
 };
 
 
-makeDancer.prototype.calcDist = function() {
-  
-};
+/*makeDancer.prototype.calcDist = function(dancer1, dancer2) {
+
+};*/                                                            
